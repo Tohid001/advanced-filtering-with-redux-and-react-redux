@@ -4,7 +4,7 @@ import cardsReducer from "./Cards/cardsReducer";
 
 const rootReducer = combineReducers({
   filters: filtersReducer,
-  cards: cardsReducer,
+  blogs: cardsReducer,
 });
 
 export default rootReducer;

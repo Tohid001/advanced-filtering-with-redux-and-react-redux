@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdClear } from "react-icons/md";
 import { useDispatch } from "react-redux";
-import debounceHandler from "../utils/debounceHandler";
 
 function SearchBar() {
   const [searchValue, setSearchValue] = useState("");
