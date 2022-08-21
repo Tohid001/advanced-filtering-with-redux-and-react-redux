@@ -1,11 +1,22 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdClear } from "react-icons/md";
+import { useDispatch } from "react-redux";
+import debounceHandler from "../utils/debounceHandler";
 
 function SearchBar() {
   const [searchValue, setSearchValue] = useState("");
   const searchRef = useRef(null);
-  console.log("searchValue", searchValue);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    let timeoutId = setTimeout(() => {
+      console.log(searchValue);
+    }, 2000);
+
+    return () => clearTimeout(timeoutId);
+  }, [searchValue]);
+
   return (
     <div className="border mt-6 border-slate-200 flex items-center gap-5 w-11/12 lg:w-1/2 mx-auto bg-gray-50 h-12 px-5 rounded-lg text-sm ring-emerald-200">
       <input
