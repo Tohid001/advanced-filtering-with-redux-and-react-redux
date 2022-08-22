@@ -23,9 +23,6 @@
   button {
     all: unset;
   }
-
-  body {
-  }
 }
 
 @layer components {

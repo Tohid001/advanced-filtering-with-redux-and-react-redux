@@ -33,6 +33,9 @@ function Filters() {
     dispatch(updateFilters("author", author));
   };
   //duration handler
+  const durationHandler = (duration) => {
+    dispatch(updateFilters("duration", duration));
+  };
 
   //clear handler
   const clearFiltersHandler = () => {
@@ -64,7 +67,7 @@ function Filters() {
           </button>
         </div>
         {showFilterPanel && (
-          <div className="absolute rounded-md top-full translate-y-[5px] w-60 bg-zinc-300 break-words overflow-y-auto h-[450px] flex flex-col space-y-5 p-5">
+          <div className="text-white absolute rounded-md top-full translate-y-[5px] w-60 bg-zinc-700 break-words overflow-y-auto h-[450px] flex flex-col space-y-5 p-5">
             <RadioFilter
               options={categories}
               handler={categoryHandler}
@@ -76,7 +79,10 @@ function Filters() {
               type="author"
             />
 
-            <DurationSlider durationRange={durationRange} />
+            <DurationSlider
+              durationHandler={durationHandler}
+              durationRange={durationRange}
+            />
           </div>
         )}
       </div>
