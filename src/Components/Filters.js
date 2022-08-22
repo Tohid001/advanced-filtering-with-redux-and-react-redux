@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import { AiTwotoneFilter } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { updateFilters, clearFilters } from "../redux/Filters/actions";
-import { SearchBar } from "../Components";
+import { SearchBar, Authors, Categories, DurationSlider } from "../Components";
 
 function Filters() {
   const [showFilterPanel, setShowFilterPanel] = useState(false);
   const filters = useSelector((state) => state.filters);
   const dispatch = useDispatch();
 
-  const isFilter = Object.keys(filters).every((key) => {
-    return filters[key] && filters[key].length !== 0;
+  const isFilter = Object.keys(filters).some((key) => {
+    return filters[key] && filters[key].length > 0;
   });
 
-  // console.log("filters", filters.noFilter);
+  console.log("filters", isFilter);
 
   //searchBar HAndler
   const filterBySearchHandler = (text) => {
@@ -30,8 +30,8 @@ function Filters() {
   //duration handler
 
   return (
-    <div className=" relative p-5 flex justify-center items-center gap-2 mt-6">
-      <div className="">
+    <div className="relative my-6 flex justify-center items-end">
+      <div className="absolute top-1/2 -translate-y-1/2 left-10">
         <div className=" flex gap-8">
           <button
             className={`cursor-pointer p-2.5 outline outline-offset-2 ${
@@ -54,8 +54,10 @@ function Filters() {
           </button>
         </div>
         {showFilterPanel && (
-          <div className="absolute top-3/4 w-96 bg-zinc-300 break-words overflow-y-auto h-[450px]">
-            filterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanelfilterPanel
+          <div className="absolute rounded-md top-full translate-y-[5px] w-60 bg-zinc-300 break-words overflow-y-auto h-[450px] flex flex-col space-y-10">
+            <Categories />
+            <Authors />
+            <DurationSlider />
           </div>
         )}
       </div>

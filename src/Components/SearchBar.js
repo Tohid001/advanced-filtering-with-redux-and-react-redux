@@ -5,26 +5,26 @@ import { useDispatch, useSelector } from "react-redux";
 
 function SearchBar({ filterBySearchHandler }) {
   const [searchValue, setSearchValue] = useState("");
+
   const searchRef = useRef(null);
 
-  const { searchText, noFilter } = useSelector((state) => state.filters);
+  const { searchText } = useSelector((state) => state.filters);
 
   useEffect(() => {
-    if (searchText !== searchValue && !searchText) {
-      let timeoutId = setTimeout(() => {
-        filterBySearchHandler(searchValue);
-      }, 1200);
+    let timeoutId = setTimeout(() => {
+      console.log("debounce");
+      filterBySearchHandler(searchValue);
+    }, 1200);
 
-      return () => clearTimeout(timeoutId);
-    }
+    return () => clearTimeout(timeoutId);
   }, [searchValue]);
 
   useEffect(() => {
-    searchText !== searchValue && !searchText && setSearchValue(searchText);
+    !searchText && setSearchValue(searchText);
   }, [searchText]);
 
   return (
-    <div className=" border  border-slate-200 flex items-center gap-5  mx-auto bg-gray-50 h-12 px-5 rounded-lg text-sm ring-emerald-200">
+    <div className="border w-[500px]  border-slate-200 flex justify-center items-center  gap-5  mx-auto bg-gray-50 h-12 px-5 rounded-lg text-sm ring-emerald-200">
       <input
         className="outline-none border-none bg-gray-50 h-full w-full mr-2 basis-full"
         type="text"

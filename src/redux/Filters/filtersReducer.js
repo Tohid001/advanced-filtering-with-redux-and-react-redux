@@ -2,6 +2,9 @@ import { UPDATE, CLEAR_FILTER } from "./actionTypes";
 
 const initialState = {
   searchText: "",
+  category: "",
+  author: "",
+  duration: [],
 };
 
 const filtersReducer = (state = initialState, action) => {
