@@ -9,7 +9,11 @@ function Filters() {
   const filters = useSelector((state) => state.filters);
   const dispatch = useDispatch();
 
-  console.log("filters", filters.noFilter);
+  const isFilter = Object.keys(filters).every((key) => {
+    return filters[key] && filters[key].length !== 0;
+  });
+
+  // console.log("filters", filters.noFilter);
 
   //searchBar HAndler
   const filterBySearchHandler = (text) => {
@@ -41,10 +45,10 @@ function Filters() {
           </button>
           <button
             className={`cursor-pointer p-2.5 text-white  ${
-              !filters.noFilter ? "bg-red-400" : "bg-gray-300"
+              isFilter ? "bg-red-400" : "bg-gray-300"
             } rounded-sm`}
             onClick={clearFiltersHandler}
-            disabled={filters.noFilter}
+            disabled={!isFilter}
           >
             Clear Filter
           </button>
