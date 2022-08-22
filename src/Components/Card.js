@@ -2,9 +2,7 @@ import React from "react";
 
 function Card({ blog }) {
   const {
-    id,
-    author,
-    avatar,
+    author: { avatar, id, name },
     coverPhoto,
     title,
     duration,
@@ -35,7 +33,7 @@ function Card({ blog }) {
           </div>
           <div className="ml-3">
             <p className="text-sm font-medium text-gray-900 hover:underline">
-              {author}
+              {name}
             </p>
             <div className="flex space-x-1 text-sm text-gray-500">
               <time datetime="2020-03-16">{createdOn}</time>

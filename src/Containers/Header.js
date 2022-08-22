@@ -1,10 +1,12 @@
 import React from "react";
-import { Filters, Navbar } from "../Components";
+import { Navbar, Filters } from "../Components";
+
 function Header() {
   return (
     <div>
       <Navbar />
       <Filters />
+
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center">
           <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">

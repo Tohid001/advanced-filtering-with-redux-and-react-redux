@@ -1,23 +1,30 @@
 import React, { useState, useRef, useEffect } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdClear } from "react-icons/md";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
-function SearchBar() {
+function SearchBar({ filterBySearchHandler }) {
   const [searchValue, setSearchValue] = useState("");
   const searchRef = useRef(null);
-  const dispatch = useDispatch();
+
+  const { searchText, noFilter } = useSelector((state) => state.filters);
 
   useEffect(() => {
-    let timeoutId = setTimeout(() => {
-      console.log(searchValue);
-    }, 2000);
+    if (searchText !== searchValue && !searchText) {
+      let timeoutId = setTimeout(() => {
+        filterBySearchHandler(searchValue);
+      }, 1200);
 
-    return () => clearTimeout(timeoutId);
+      return () => clearTimeout(timeoutId);
+    }
   }, [searchValue]);
 
+  useEffect(() => {
+    searchText !== searchValue && !searchText && setSearchValue(searchText);
+  }, [searchText]);
+
   return (
-    <div className="border mt-6 border-slate-200 flex items-center gap-5 w-11/12 lg:w-1/2 mx-auto bg-gray-50 h-12 px-5 rounded-lg text-sm ring-emerald-200">
+    <div className=" border  border-slate-200 flex items-center gap-5  mx-auto bg-gray-50 h-12 px-5 rounded-lg text-sm ring-emerald-200">
       <input
         className="outline-none border-none bg-gray-50 h-full w-full mr-2 basis-full"
         type="text"
@@ -29,6 +36,7 @@ function SearchBar() {
           setSearchValue(value);
         }}
       />
+
       {searchValue && (
         <button
           className={`cursor-pointer grid place-items-center ml-auto p-1.5  rounded-full ${
