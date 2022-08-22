@@ -19,7 +19,7 @@
     list-style: none;
   }
   a,
-  input,
+  input[type="text"],
   button {
     all: unset;
   }

@@ -9,13 +9,21 @@ function CardGrid() {
   const { searchText } = filters;
   const shouldDisplay = (blog) => {
     const keys = ["title", "name", "category"];
-    let matchSearchedText = keys.some(
-      (key) =>
-        blog[key]?.toLowerCase().includes(searchText) ||
-        blog.author[key]?.toLowerCase().includes(searchText)
-    );
+    let matchSearchedText = !searchText
+      ? true
+      : keys.some(
+          (key) =>
+            blog[key]?.toLowerCase().includes(searchText) ||
+            blog.author[key]?.toLowerCase().includes(searchText)
+        );
+    let matchCategory = !filters.category
+      ? true
+      : filters.category === blog.category;
+    let matchAuthor = !filters.author
+      ? true
+      : filters.author === blog.author.name;
 
-    return matchSearchedText;
+    return matchSearchedText && matchAuthor && matchCategory;
   };
 
   const updateCategories = (category) => {
@@ -32,7 +40,12 @@ function CardGrid() {
       <div className="flex p-7 justify-center bg-slate-200 font-bold mt-5">{`${filteredBLogs.length} items found`}</div>
       <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
         {blogs.filter(shouldDisplay).map((blog) => (
-          <Card key={blog.blogId} blog={blog} />
+          <Card
+            key={blog.blogId}
+            blog={blog}
+            updateCategories={updateCategories}
+            updateAuthors={updateAuthors}
+          />
         ))}
       </div>
     </div>

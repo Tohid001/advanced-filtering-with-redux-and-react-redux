@@ -2,32 +2,42 @@ import React, { useState } from "react";
 import { AiTwotoneFilter } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { updateFilters, clearFilters } from "../redux/Filters/actions";
-import { SearchBar, Authors, Categories, DurationSlider } from "../Components";
+import { SearchBar, RadioFilter, DurationSlider } from "../Components";
 
 function Filters() {
   const [showFilterPanel, setShowFilterPanel] = useState(false);
-  const filters = useSelector((state) => state.filters);
+  const { filters, blogs } = useSelector((state) => state);
   const dispatch = useDispatch();
 
   const isFilter = Object.keys(filters).some((key) => {
     return filters[key] && filters[key].length > 0;
   });
 
-  console.log("filters", isFilter);
+  const categories = Array.from(new Set(blogs.map((blog) => blog.category)));
+  const authors = Array.from(new Set(blogs.map((blog) => blog.author.name)));
+  const durations = Array.from(new Set(blogs.map((blog) => blog.duration)));
+  const durationRange = [0, Math.max(...durations)];
 
   //searchBar HAndler
   const filterBySearchHandler = (text) => {
     dispatch(updateFilters("searchText", text));
   };
 
+  //category handler
+  const categoryHandler = (category) => {
+    dispatch(updateFilters("category", category));
+  };
+
+  //author handler
+  const authorHandler = (author) => {
+    dispatch(updateFilters("author", author));
+  };
+  //duration handler
+
   //clear handler
   const clearFiltersHandler = () => {
     dispatch(clearFilters());
   };
-
-  //category handler
-  //author handler
-  //duration handler
 
   return (
     <div className="relative my-6 flex justify-center items-end">
@@ -54,10 +64,19 @@ function Filters() {
           </button>
         </div>
         {showFilterPanel && (
-          <div className="absolute rounded-md top-full translate-y-[5px] w-60 bg-zinc-300 break-words overflow-y-auto h-[450px] flex flex-col space-y-10">
-            <Categories />
-            <Authors />
-            <DurationSlider />
+          <div className="absolute rounded-md top-full translate-y-[5px] w-60 bg-zinc-300 break-words overflow-y-auto h-[450px] flex flex-col space-y-5 p-5">
+            <RadioFilter
+              options={categories}
+              handler={categoryHandler}
+              type="category"
+            />
+            <RadioFilter
+              options={authors}
+              handler={authorHandler}
+              type="author"
+            />
+
+            <DurationSlider durationRange={durationRange} />
           </div>
         )}
       </div>

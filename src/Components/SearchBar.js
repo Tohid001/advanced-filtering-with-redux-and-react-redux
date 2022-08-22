@@ -14,7 +14,7 @@ function SearchBar({ filterBySearchHandler }) {
     let timeoutId = setTimeout(() => {
       console.log("debounce");
       filterBySearchHandler(searchValue);
-    }, 1200);
+    }, 1000);
 
     return () => clearTimeout(timeoutId);
   }, [searchValue]);
@@ -24,9 +24,9 @@ function SearchBar({ filterBySearchHandler }) {
   }, [searchText]);
 
   return (
-    <div className="border w-[500px]  border-slate-200 flex justify-center items-center  gap-5  mx-auto bg-gray-50 h-12 px-5 rounded-lg text-sm ring-emerald-200">
+    <div className="border w-96  border-slate-200 flex gap-2.5 justify-center items-center bg-gray-50 h-12 px-5 rounded-lg text-sm ring-emerald-200">
       <input
-        className="outline-none border-none bg-gray-50 h-full w-full mr-2 basis-full"
+        className="outline-none border-none bg-gray-50 h-full w-full  flex-grow"
         type="text"
         name="search"
         placeholder="Search"
