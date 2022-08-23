@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiTwotoneFilter } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { updateFilters, clearFilters } from "../redux/Filters/actions";
@@ -15,14 +15,6 @@ function Filters() {
   const durationRange = [0, Math.max(...durations)];
 
   const isFilter = Object.keys(filters).some((key) => {
-    // if (key === "duration") {
-    //   return (
-    //     filters[key] &&
-    //     filters[key].length > 0 &&
-    //     filters[key][0] !== durationRange[0] &&
-    //     filters[key][1] !== durationRange[1]
-    //   );
-    // }
     return filters[key] && filters[key].length > 0;
   });
 
@@ -50,6 +42,10 @@ function Filters() {
     dispatch(clearFilters());
   };
 
+  useEffect(() => {
+    !isFilter && setShowFilterPanel(false);
+  }, [isFilter]);
+
   return (
     <div className="relative my-6 flex justify-center items-end">
       <div className="absolute top-1/2 -translate-y-1/2 left-10">
@@ -62,7 +58,7 @@ function Filters() {
               setShowFilterPanel(!showFilterPanel);
             }}
           >
-            <AiTwotoneFilter />
+            <AiTwotoneFilter style={{ fontSize: "24px" }} />
           </button>
           <button
             className={`cursor-pointer p-2.5 text-white  ${
@@ -74,9 +70,7 @@ function Filters() {
             Clear Filter
           </button>
         </div>
-        {/* filterpanel <don't use conditional rendering as local states of the filter palel component renew> ${
-            !showFilterPanel && "hidden"
-          }*/}
+
         {showFilterPanel && (
           <div
             className={`text-white  absolute rounded-md top-full translate-y-[5px] w-60 bg-zinc-700 break-words overflow-y-auto h-[450px] flex flex-col space-y-5 p-5`}

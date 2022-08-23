@@ -6,7 +6,7 @@
       "avatar": "https://robohash.org/quasquaererum.png?size=50x50&set=set1",
       "id": 1
     },
-    "category": "NGP",
+    "category": "Robotics",
     "createdOn": "5/24/2022",
     "duration": 15,
     "title": "synergize out-of-the-box infrastructures",
@@ -19,7 +19,7 @@
       "avatar": "https://robohash.org/voluptasdoloribusvelit.png?size=50x50&set=set1",
       "id": 2
     },
-    "category": "LCD Projectors",
+    "category": "Programming",
     "createdOn": "10/9/2021",
     "duration": 19,
     "title": "repurpose e-business mindshare",
@@ -32,7 +32,7 @@
       "avatar": "https://robohash.org/sequiblanditiisfugit.png?size=50x50&set=set1",
       "id": 3
     },
-    "category": "Kanban",
+    "category": "Data-science",
     "createdOn": "10/28/2021",
     "duration": 12,
     "title": "strategize global web services",
@@ -45,7 +45,7 @@
       "avatar": "https://robohash.org/autemutcorporis.png?size=50x50&set=set1",
       "id": 4
     },
-    "category": "Juniper JNCIA",
+    "category": "Machine-learning",
     "createdOn": "12/31/2021",
     "duration": 14,
     "title": "incentivize sticky relationships",
@@ -58,7 +58,7 @@
       "avatar": "https://robohash.org/saepeetqui.png?size=50x50&set=set1",
       "id": 5
     },
-    "category": "Kaledo",
+    "category": "Content-writing",
     "createdOn": "7/12/2022",
     "duration": 14,
     "title": "benchmark transparent channels",
@@ -67,11 +67,11 @@
   {
     "blogId": 6,
     "author": {
-      "name": "Cherri Austen",
+      "name": "Orrin Pymar",
       "avatar": "https://robohash.org/eumesseet.png?size=50x50&set=set1",
       "id": 6
     },
-    "category": "Pneumatic Tools",
+    "category": "Web-development",
     "createdOn": "6/20/2022",
     "duration": 9,
     "title": "target vertical mindshare",
@@ -84,7 +84,7 @@
       "avatar": "https://robohash.org/architectoexvero.png?size=50x50&set=set1",
       "id": 7
     },
-    "category": "NDC",
+    "category": "App-development",
     "createdOn": "12/24/2021",
     "duration": 5,
     "title": "visualize wireless convergence",
@@ -93,11 +93,11 @@
   {
     "blogId": 8,
     "author": {
-      "name": "Paco Boeter",
+      "name": "Willy Kitchenham",
       "avatar": "https://robohash.org/suntmolestiaeaut.png?size=50x50&set=set1",
       "id": 8
     },
-    "category": "RBD",
+    "category": "Sports",
     "createdOn": "7/2/2022",
     "duration": 15,
     "title": "repurpose web-enabled channels",
@@ -106,11 +106,11 @@
   {
     "blogId": 9,
     "author": {
-      "name": "Crista Munning",
+      "name": "Orrin Pymar",
       "avatar": "https://robohash.org/numquamessereiciendis.png?size=50x50&set=set1",
       "id": 9
     },
-    "category": "Personal Training",
+    "category": "Health",
     "createdOn": "11/18/2021",
     "duration": 9,
     "title": "exploit one-to-one technologies",
@@ -119,11 +119,11 @@
   {
     "blogId": 10,
     "author": {
-      "name": "Bethanne Acton",
+      "name": "Harald Scone",
       "avatar": "https://robohash.org/quiavoluptatemexcepturi.png?size=50x50&set=set1",
       "id": 10
     },
-    "category": "ION Marketview",
+    "category": "Travelling",
     "createdOn": "5/15/2022",
     "duration": 18,
     "title": "expedite compelling ROI",
@@ -132,11 +132,11 @@
   {
     "blogId": 11,
     "author": {
-      "name": "Der Fidal",
+      "name": "Sonnie Dineen",
       "avatar": "https://robohash.org/similiquenonaccusamus.png?size=50x50&set=set1",
       "id": 11
     },
-    "category": "C-TPAT",
+    "category": "Robotics",
     "createdOn": "10/22/2021",
     "duration": 12,
     "title": "reintermediate interactive paradigms",
@@ -149,7 +149,7 @@
       "avatar": "https://robohash.org/temporaquiavoluptates.png?size=50x50&set=set1",
       "id": 12
     },
-    "category": "Yellow Pages",
+    "category": "Programming",
     "createdOn": "12/16/2021",
     "duration": 10,
     "title": "monetize interactive ROI",
@@ -158,11 +158,11 @@
   {
     "blogId": 13,
     "author": {
-      "name": "Nikkie Shills",
+      "name": "Harald Scone",
       "avatar": "https://robohash.org/officiisvoluptatemnecessitatibus.png?size=50x50&set=set1",
       "id": 13
     },
-    "category": "Cluster",
+    "category": "Data-science",
     "createdOn": "1/28/2022",
     "duration": 18,
     "title": "enable cross-platform communities",
@@ -171,11 +171,11 @@
   {
     "blogId": 14,
     "author": {
-      "name": "Bettina Martini",
+      "name": "Sonnie Dineen",
       "avatar": "https://robohash.org/dolorumaliquidrepudiandae.png?size=50x50&set=set1",
       "id": 14
     },
-    "category": "Citrix",
+    "category": "Machine-learning",
     "createdOn": "2/26/2022",
     "duration": 9,
     "title": "recontextualize customized content",
@@ -188,7 +188,7 @@
       "avatar": "https://robohash.org/voluptatemitaqueet.png?size=50x50&set=set1",
       "id": 15
     },
-    "category": "Turn Around Management",
+    "category": "Content-writing",
     "createdOn": "5/28/2022",
     "duration": 16,
     "title": "matrix one-to-one convergence",
@@ -197,11 +197,11 @@
   {
     "blogId": 16,
     "author": {
-      "name": "Carmen Joynson",
+      "name": "Harald Scone",
       "avatar": "https://robohash.org/estquisint.png?size=50x50&set=set1",
       "id": 16
     },
-    "category": "Avid Newscutter",
+    "category": "Web-development",
     "createdOn": "11/16/2021",
     "duration": 8,
     "title": "morph plug-and-play channels",
@@ -210,11 +210,11 @@
   {
     "blogId": 17,
     "author": {
-      "name": "Borden Norridge",
+      "name": "Sonnie Dineen",
       "avatar": "https://robohash.org/perspiciatisestinventore.png?size=50x50&set=set1",
       "id": 17
     },
-    "category": "RGB",
+    "category": "App-development",
     "createdOn": "10/23/2021",
     "duration": 16,
     "title": "drive B2C niches",
@@ -223,11 +223,11 @@
   {
     "blogId": 18,
     "author": {
-      "name": "Wallace Nield",
+      "name": "Orrin Pymar",
       "avatar": "https://robohash.org/magniquiconsequatur.png?size=50x50&set=set1",
       "id": 18
     },
-    "category": "Database Administration",
+    "category": "Sports",
     "createdOn": "6/24/2022",
     "duration": 5,
     "title": "aggregate clicks-and-mortar markets",
@@ -236,11 +236,11 @@
   {
     "blogId": 19,
     "author": {
-      "name": "Arabelle Dandison",
+      "name": "Harald Scone",
       "avatar": "https://robohash.org/omnisprovidenteum.png?size=50x50&set=set1",
       "id": 19
     },
-    "category": "HNI",
+    "category": "Health",
     "createdOn": "6/24/2022",
     "duration": 10,
     "title": "mesh back-end technologies",
@@ -253,7 +253,7 @@
       "avatar": "https://robohash.org/doloresdelectussunt.png?size=50x50&set=set1",
       "id": 20
     },
-    "category": "Parts",
+    "category": "Travelling",
     "createdOn": "2/11/2022",
     "duration": 13,
     "title": "incentivize sexy e-business",
@@ -266,7 +266,7 @@
       "avatar": "https://robohash.org/ataliquamaut.png?size=50x50&set=set1",
       "id": 21
     },
-    "category": "Sybase SQL Anywhere",
+    "category": "Robotics",
     "createdOn": "9/13/2021",
     "duration": 20,
     "title": "drive proactive e-markets",
@@ -275,11 +275,11 @@
   {
     "blogId": 22,
     "author": {
-      "name": "Eldin Outright",
+      "name": "Sonnie Dineen",
       "avatar": "https://robohash.org/eanecessitatibusdolorem.png?size=50x50&set=set1",
       "id": 22
     },
-    "category": "LS9",
+    "category": "Programming",
     "createdOn": "7/4/2022",
     "duration": 19,
     "title": "cultivate synergistic schemas",
@@ -292,7 +292,7 @@
       "avatar": "https://robohash.org/odiofugitvelit.png?size=50x50&set=set1",
       "id": 23
     },
-    "category": "Efficent",
+    "category": "Data-science",
     "createdOn": "3/23/2022",
     "duration": 15,
     "title": "streamline B2C paradigms",
@@ -301,11 +301,11 @@
   {
     "blogId": 24,
     "author": {
-      "name": "Cleveland Jermin",
+      "name": "Harald Scone",
       "avatar": "https://robohash.org/asperioresquivoluptatem.png?size=50x50&set=set1",
       "id": 24
     },
-    "category": "Ventilation",
+    "category": "Machine-learning",
     "createdOn": "10/23/2021",
     "duration": 10,
     "title": "scale bricks-and-clicks systems",
@@ -318,7 +318,7 @@
       "avatar": "https://robohash.org/utvoluptatemdicta.png?size=50x50&set=set1",
       "id": 25
     },
-    "category": "Lyrical",
+    "category": "Content-writing",
     "createdOn": "8/19/2022",
     "duration": 15,
     "title": "streamline magnetic niches",
@@ -331,7 +331,7 @@
       "avatar": "https://robohash.org/rerumquiveritatis.png?size=50x50&set=set1",
       "id": 26
     },
-    "category": "Errors &amp; Omissions",
+    "category": "Web-development",
     "createdOn": "5/13/2022",
     "duration": 20,
     "title": "incubate impactful web services",
@@ -344,7 +344,7 @@
       "avatar": "https://robohash.org/perspiciatisquoab.png?size=50x50&set=set1",
       "id": 27
     },
-    "category": "Cell Culture",
+    "category": "App-development",
     "createdOn": "4/24/2022",
     "duration": 10,
     "title": "embrace front-end metrics",
@@ -357,7 +357,7 @@
       "avatar": "https://robohash.org/ealaudantiumut.png?size=50x50&set=set1",
       "id": 28
     },
-    "category": "XPlanner",
+    "category": "Sports",
     "createdOn": "1/5/2022",
     "duration": 14,
     "title": "scale global mindshare",
@@ -366,11 +366,11 @@
   {
     "blogId": 29,
     "author": {
-      "name": "Sarah Rothert",
+      "name": "Willy Kitchenham",
       "avatar": "https://robohash.org/quidignissimosincidunt.png?size=50x50&set=set1",
       "id": 29
     },
-    "category": "Brand Ambassadorship",
+    "category": "Health",
     "createdOn": "1/31/2022",
     "duration": 17,
     "title": "maximize visionary initiatives",
@@ -379,11 +379,11 @@
   {
     "blogId": 30,
     "author": {
-      "name": "Davidde Carslake",
+      "name": "Orrin Pymar",
       "avatar": "https://robohash.org/rerumetest.png?size=50x50&set=set1",
       "id": 30
     },
-    "category": "FxCop",
+    "category": "Travelling",
     "createdOn": "3/13/2022",
     "duration": 15,
     "title": "orchestrate compelling metrics",
@@ -392,11 +392,11 @@
   {
     "blogId": 31,
     "author": {
-      "name": "Robby Conew",
+      "name": "Harald Scone",
       "avatar": "https://robohash.org/consequaturiustosaepe.png?size=50x50&set=set1",
       "id": 31
     },
-    "category": "RHCE",
+    "category": "Robotics",
     "createdOn": "8/17/2022",
     "duration": 5,
     "title": "syndicate sticky portals",
@@ -405,11 +405,11 @@
   {
     "blogId": 32,
     "author": {
-      "name": "Nissy Littler",
+      "name": "Sonnie Dineen",
       "avatar": "https://robohash.org/autistefugit.png?size=50x50&set=set1",
       "id": 32
     },
-    "category": "Team Mgmt",
+    "category": "Programming",
     "createdOn": "6/22/2022",
     "duration": 20,
     "title": "e-enable e-business synergies",
@@ -418,11 +418,11 @@
   {
     "blogId": 33,
     "author": {
-      "name": "Stacee Snadden",
+      "name": "Harald Scone",
       "avatar": "https://robohash.org/sequiliberoqui.png?size=50x50&set=set1",
       "id": 33
     },
-    "category": "Turkish",
+    "category": "Data-science",
     "createdOn": "7/22/2022",
     "duration": 16,
     "title": "recontextualize enterprise technologies",
@@ -435,7 +435,7 @@
       "avatar": "https://robohash.org/atsintaliquid.png?size=50x50&set=set1",
       "id": 34
     },
-    "category": "TV Production",
+    "category": "Machine-learning",
     "createdOn": "2/26/2022",
     "duration": 11,
     "title": "transition next-generation paradigms",
@@ -448,7 +448,7 @@
       "avatar": "https://robohash.org/quodautest.png?size=50x50&set=set1",
       "id": 35
     },
-    "category": "Mood Boards",
+    "category": "Content-writing",
     "createdOn": "1/25/2022",
     "duration": 15,
     "title": "incentivize dot-com infrastructures",
@@ -461,7 +461,7 @@
       "avatar": "https://robohash.org/etmodienim.png?size=50x50&set=set1",
       "id": 36
     },
-    "category": "21 CFR Part 11",
+    "category": "Web-development",
     "createdOn": "5/28/2022",
     "duration": 20,
     "title": "incentivize holistic web services",
@@ -474,7 +474,7 @@
       "avatar": "https://robohash.org/impeditautemquam.png?size=50x50&set=set1",
       "id": 37
     },
-    "category": "Online Lead Generation",
+    "category": "App-development",
     "createdOn": "12/29/2021",
     "duration": 14,
     "title": "grow enterprise web services",
@@ -483,11 +483,11 @@
   {
     "blogId": 38,
     "author": {
-      "name": "Jenni Purchall",
+      "name": "Michel Farady",
       "avatar": "https://robohash.org/magnamsuntpraesentium.png?size=50x50&set=set1",
       "id": 38
     },
-    "category": "Lean Manufacturing",
+    "category": "Sports",
     "createdOn": "7/12/2022",
     "duration": 20,
     "title": "redefine end-to-end applications",
@@ -496,11 +496,11 @@
   {
     "blogId": 39,
     "author": {
-      "name": "Ettore Hulburd",
+      "name": "Harald Scone",
       "avatar": "https://robohash.org/aperiambeataesunt.png?size=50x50&set=set1",
       "id": 39
     },
-    "category": "CX",
+    "category": "Health",
     "createdOn": "7/14/2022",
     "duration": 12,
     "title": "mesh clicks-and-mortar supply-chains",
@@ -513,7 +513,7 @@
       "avatar": "https://robohash.org/autdignissimosratione.png?size=50x50&set=set1",
       "id": 40
     },
-    "category": "GMS",
+    "category": "Travelling",
     "createdOn": "2/25/2022",
     "duration": 12,
     "title": "synthesize cross-platform e-services",
@@ -526,7 +526,7 @@
       "avatar": "https://robohash.org/enimtemporibusasperiores.png?size=50x50&set=set1",
       "id": 41
     },
-    "category": "Channel Partners",
+    "category": "Robotics",
     "createdOn": "1/27/2022",
     "duration": 14,
     "title": "grow 24/365 markets",
@@ -535,11 +535,11 @@
   {
     "blogId": 42,
     "author": {
-      "name": "Natale Gounod",
+      "name": "Michel Farady",
       "avatar": "https://robohash.org/necessitatibusesseeius.png?size=50x50&set=set1",
       "id": 42
     },
-    "category": "MTT",
+    "category": "Programming",
     "createdOn": "9/11/2021",
     "duration": 15,
     "title": "morph visionary markets",
@@ -548,11 +548,11 @@
   {
     "blogId": 43,
     "author": {
-      "name": "Fin Farndon",
+      "name": "Orrin Pymar",
       "avatar": "https://robohash.org/aspernaturnihildolores.png?size=50x50&set=set1",
       "id": 43
     },
-    "category": "Energy",
+    "category": "Data-science",
     "createdOn": "10/4/2021",
     "duration": 11,
     "title": "morph B2B e-markets",
@@ -561,11 +561,11 @@
   {
     "blogId": 44,
     "author": {
-      "name": "Hayyim Matkin",
+      "name": "Willy Kitchenham",
       "avatar": "https://robohash.org/eadoloremesse.png?size=50x50&set=set1",
       "id": 44
     },
-    "category": "FTTx",
+    "category": "Machine-learning",
     "createdOn": "8/19/2022",
     "duration": 12,
     "title": "innovate out-of-the-box interfaces",
@@ -574,11 +574,11 @@
   {
     "blogId": 45,
     "author": {
-      "name": "Torey Parsons",
+      "name": "Sonnie Dineen",
       "avatar": "https://robohash.org/accusantiumquisquamculpa.png?size=50x50&set=set1",
       "id": 45
     },
-    "category": "Avid Media Composer",
+    "category": "Content-writing",
     "createdOn": "9/26/2021",
     "duration": 17,
     "title": "streamline dynamic infomediaries",
@@ -587,11 +587,11 @@
   {
     "blogId": 46,
     "author": {
-      "name": "Quillan McKelvey",
+      "name": "Michel Farady",
       "avatar": "https://robohash.org/fugitplaceatprovident.png?size=50x50&set=set1",
       "id": 46
     },
-    "category": "Food Science",
+    "category": "Web-development",
     "createdOn": "9/27/2021",
     "duration": 13,
     "title": "incentivize holistic web services",
@@ -604,7 +604,7 @@
       "avatar": "https://robohash.org/voluptaseosut.png?size=50x50&set=set1",
       "id": 47
     },
-    "category": "MBTI",
+    "category": "App-development",
     "createdOn": "5/23/2022",
     "duration": 18,
     "title": "target B2B web services",
@@ -617,7 +617,7 @@
       "avatar": "https://robohash.org/etenimquaerat.png?size=50x50&set=set1",
       "id": 48
     },
-    "category": "Graduate Recruitment",
+    "category": "Sports",
     "createdOn": "1/8/2022",
     "duration": 10,
     "title": "unleash collaborative supply-chains",
@@ -626,11 +626,11 @@
   {
     "blogId": 49,
     "author": {
-      "name": "Darrick Whorf",
+      "name": "Michel Farady",
       "avatar": "https://robohash.org/architectoaperferendis.png?size=50x50&set=set1",
       "id": 49
     },
-    "category": "SAP Business ByDesign",
+    "category": "Health",
     "createdOn": "7/15/2022",
     "duration": 18,
     "title": "morph innovative functionalities",
@@ -639,11 +639,11 @@
   {
     "blogId": 50,
     "author": {
-      "name": "Derby Marlon",
+      "name": "Willy Kitchenham",
       "avatar": "https://robohash.org/quiatemporibusillum.png?size=50x50&set=set1",
       "id": 50
     },
-    "category": "BPA",
+    "category": "Travelling",
     "createdOn": "4/21/2022",
     "duration": 20,
     "title": "target 24/7 networks",

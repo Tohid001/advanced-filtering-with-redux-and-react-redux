@@ -46,7 +46,7 @@ function RadioFilter({ handler, options, type }) {
                 onChange={onChangeHandler}
                 checked={option === value}
               />
-              <label for={option}>{option}</label>
+              <label htmlFor={option}>{option}</label>
             </div>
           ))}
         </div>
