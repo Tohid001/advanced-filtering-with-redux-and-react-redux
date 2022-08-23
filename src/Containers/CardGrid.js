@@ -23,7 +23,13 @@ function CardGrid() {
       ? true
       : filters.author === blog.author.name;
 
-    return matchSearchedText && matchAuthor && matchCategory;
+    let matchDuration =
+      filters.duration && filters.duration.length == 0
+        ? true
+        : blog.duration > filters.duration[0] &&
+          blog.duration < filters.duration[1];
+
+    return matchSearchedText && matchAuthor && matchCategory && matchDuration;
   };
 
   const updateCategories = (category) => {

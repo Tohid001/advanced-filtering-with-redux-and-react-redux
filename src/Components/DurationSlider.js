@@ -47,8 +47,6 @@ const MultiRangeSlider = ({ durationHandler, durationRange }) => {
   // debounce
   useEffect(() => {
     let timeoutId = setTimeout(() => {
-      console.log("debounce", minVal, maxVal);
-      // filterBySearchHandler(searchValue);
       !(currentDurationRange.length == 0 && minVal == 0 && maxVal == 20) &&
         durationHandler([minVal, maxVal]);
     }, 1000);
@@ -60,6 +58,9 @@ const MultiRangeSlider = ({ durationHandler, durationRange }) => {
     if (currentDurationRange.length == 0) {
       setMinVal(durationRange[0]);
       setMaxVal(durationRange[1]);
+    } else {
+      setMinVal(currentDurationRange[0]);
+      setMaxVal(currentDurationRange[1]);
     }
   }, [currentDurationRange]);
 

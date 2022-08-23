@@ -12,7 +12,6 @@ function SearchBar({ filterBySearchHandler }) {
 
   useEffect(() => {
     let timeoutId = setTimeout(() => {
-      console.log("debounce");
       filterBySearchHandler(searchValue);
     }, 1000);
 

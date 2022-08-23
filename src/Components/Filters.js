@@ -74,28 +74,30 @@ function Filters() {
             Clear Filter
           </button>
         </div>
-        {/* filterpanel <don't use conditional rendering as local states of the filter palel component renew>*/}
-        <div
-          className={`text-white ${
+        {/* filterpanel <don't use conditional rendering as local states of the filter palel component renew> ${
             !showFilterPanel && "hidden"
-          } absolute rounded-md top-full translate-y-[5px] w-60 bg-zinc-700 break-words overflow-y-auto h-[450px] flex flex-col space-y-5 p-5`}
-        >
-          <RadioFilter
-            options={categories}
-            handler={categoryHandler}
-            type="category"
-          />
-          <RadioFilter
-            options={authors}
-            handler={authorHandler}
-            type="author"
-          />
+          }*/}
+        {showFilterPanel && (
+          <div
+            className={`text-white  absolute rounded-md top-full translate-y-[5px] w-60 bg-zinc-700 break-words overflow-y-auto h-[450px] flex flex-col space-y-5 p-5`}
+          >
+            <RadioFilter
+              options={categories}
+              handler={categoryHandler}
+              type="category"
+            />
+            <RadioFilter
+              options={authors}
+              handler={authorHandler}
+              type="author"
+            />
 
-          <DurationSlider
-            durationHandler={durationHandler}
-            durationRange={durationRange}
-          />
-        </div>
+            <DurationSlider
+              durationHandler={durationHandler}
+              durationRange={durationRange}
+            />
+          </div>
+        )}
       </div>
       <SearchBar filterBySearchHandler={filterBySearchHandler} />
     </div>

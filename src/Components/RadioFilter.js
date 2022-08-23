@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MdOutlineExpandMore, MdOutlineExpandLess } from "react-icons/md";
 import { useSelector } from "react-redux";
 
@@ -9,6 +9,10 @@ function RadioFilter({ handler, options, type }) {
   const onChangeHandler = (e) => {
     handler(e.target.value);
   };
+
+  useEffect(() => {
+    value && setExpand(true);
+  }, [value]);
   return (
     <div>
       <div
