@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useState, useRef } from "react";
 import classnames from "classnames";
 import "../durationSlider.css";
+import { useSelector } from "react-redux";
 
-const onChange = ({ min, max }) => console.log(`min = ${min}, max = ${max}`);
-const min = 1;
-const max = 25;
-
-const MultiRangeSlider = () => {
+const MultiRangeSlider = ({ durationHandler, durationRange }) => {
+  const currentDurationRange = useSelector((state) => state.filters.duration);
+  const min = durationRange[0];
+  const max = durationRange[1];
   const [minVal, setMinVal] = useState(min);
   const [maxVal, setMaxVal] = useState(max);
   const minValRef = useRef(null);
@@ -44,10 +44,24 @@ const MultiRangeSlider = () => {
     }
   }, [maxVal, getPercent]);
 
-  // Get min and max values when their state changes
+  // debounce
   useEffect(() => {
-    onChange({ min: minVal, max: maxVal });
-  }, [minVal, maxVal, onChange]);
+    let timeoutId = setTimeout(() => {
+      console.log("debounce", minVal, maxVal);
+      // filterBySearchHandler(searchValue);
+      !(currentDurationRange.length == 0 && minVal == 0 && maxVal == 20) &&
+        durationHandler([minVal, maxVal]);
+    }, 1000);
+
+    return () => clearTimeout(timeoutId);
+  }, [minVal, maxVal]);
+
+  useEffect(() => {
+    if (currentDurationRange.length == 0) {
+      setMinVal(durationRange[0]);
+      setMaxVal(durationRange[1]);
+    }
+  }, [currentDurationRange]);
 
   return (
     <div>
@@ -59,7 +73,7 @@ const MultiRangeSlider = () => {
           max={max}
           value={minVal}
           ref={minValRef}
-          onChange={(event: ChangeEvent) => {
+          onChange={(event) => {
             const value = Math.min(+event.target.value, maxVal - 1);
             setMinVal(value);
             event.target.value = value.toString();
@@ -74,7 +88,7 @@ const MultiRangeSlider = () => {
           max={max}
           value={maxVal}
           ref={maxValRef}
-          onChange={(event: ChangeEvent) => {
+          onChange={(event) => {
             const value = Math.max(+event.target.value, minVal + 1);
             setMaxVal(value);
             event.target.value = value.toString();

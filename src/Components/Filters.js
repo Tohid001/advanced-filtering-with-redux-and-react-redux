@@ -9,14 +9,22 @@ function Filters() {
   const { filters, blogs } = useSelector((state) => state);
   const dispatch = useDispatch();
 
-  const isFilter = Object.keys(filters).some((key) => {
-    return filters[key] && filters[key].length > 0;
-  });
-
   const categories = Array.from(new Set(blogs.map((blog) => blog.category)));
   const authors = Array.from(new Set(blogs.map((blog) => blog.author.name)));
   const durations = Array.from(new Set(blogs.map((blog) => blog.duration)));
   const durationRange = [0, Math.max(...durations)];
+
+  const isFilter = Object.keys(filters).some((key) => {
+    // if (key === "duration") {
+    //   return (
+    //     filters[key] &&
+    //     filters[key].length > 0 &&
+    //     filters[key][0] !== durationRange[0] &&
+    //     filters[key][1] !== durationRange[1]
+    //   );
+    // }
+    return filters[key] && filters[key].length > 0;
+  });
 
   //searchBar HAndler
   const filterBySearchHandler = (text) => {
@@ -66,25 +74,28 @@ function Filters() {
             Clear Filter
           </button>
         </div>
-        {showFilterPanel && (
-          <div className="text-white absolute rounded-md top-full translate-y-[5px] w-60 bg-zinc-700 break-words overflow-y-auto h-[450px] flex flex-col space-y-5 p-5">
-            <RadioFilter
-              options={categories}
-              handler={categoryHandler}
-              type="category"
-            />
-            <RadioFilter
-              options={authors}
-              handler={authorHandler}
-              type="author"
-            />
+        {/* filterpanel <don't use conditional rendering as local states of the filter palel component renew>*/}
+        <div
+          className={`text-white ${
+            !showFilterPanel && "hidden"
+          } absolute rounded-md top-full translate-y-[5px] w-60 bg-zinc-700 break-words overflow-y-auto h-[450px] flex flex-col space-y-5 p-5`}
+        >
+          <RadioFilter
+            options={categories}
+            handler={categoryHandler}
+            type="category"
+          />
+          <RadioFilter
+            options={authors}
+            handler={authorHandler}
+            type="author"
+          />
 
-            <DurationSlider
-              durationHandler={durationHandler}
-              durationRange={durationRange}
-            />
-          </div>
-        )}
+          <DurationSlider
+            durationHandler={durationHandler}
+            durationRange={durationRange}
+          />
+        </div>
       </div>
       <SearchBar filterBySearchHandler={filterBySearchHandler} />
     </div>
