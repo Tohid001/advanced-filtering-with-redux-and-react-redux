@@ -4,15 +4,30 @@ import { useSelector } from "react-redux";
 
 function RadioFilter({ handler, options, type }) {
   const [expand, setExpand] = useState(false);
+  const [selectedOption, setSelectedOption] = useState("");
   const value = useSelector((state) => state.filters[type]);
 
   const onChangeHandler = (e) => {
-    handler(e.target.value);
+    setSelectedOption(e.target.value);
   };
 
   useEffect(() => {
-    value && setExpand(true);
+    let timeoutId = setTimeout(() => {
+      !(setSelectedOption === value) && handler(selectedOption);
+    }, 350);
+
+    return () => clearTimeout(timeoutId);
+  }, [selectedOption]);
+
+  useEffect(() => {
+    if (value) {
+      if (!expand) {
+        setExpand(true);
+        setSelectedOption(value);
+      }
+    }
   }, [value]);
+
   return (
     <div>
       <div
@@ -44,7 +59,7 @@ function RadioFilter({ handler, options, type }) {
                 name={type}
                 value={option}
                 onChange={onChangeHandler}
-                checked={option === value}
+                checked={option === selectedOption}
               />
               <label className="cursor-pointer" htmlFor={option}>
                 {option}
