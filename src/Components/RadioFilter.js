@@ -46,7 +46,9 @@ function RadioFilter({ handler, options, type }) {
                 onChange={onChangeHandler}
                 checked={option === value}
               />
-              <label htmlFor={option}>{option}</label>
+              <label className="cursor-pointer" htmlFor={option}>
+                {option}
+              </label>
             </div>
           ))}
         </div>

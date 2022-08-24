@@ -73,7 +73,7 @@ function Filters() {
 
         {showFilterPanel && (
           <div
-            className={`text-white  absolute rounded-md top-full translate-y-[5px] w-60 bg-zinc-700 break-words overflow-y-auto h-[450px] flex flex-col space-y-5 p-5`}
+            className={`text-white  absolute z-40 rounded-md top-full translate-y-[5px] w-60 bg-black break-words overflow-y-auto h-[450px] flex flex-col space-y-5 p-5`}
           >
             <RadioFilter
               options={categories}
