@@ -1,3 +1,11 @@
+# What is this about?
+
+The goal was to implement several advanced filtering methods in the old react-redux way. I used Mockaroo to generate static random blog data in JSON format. All the filters (search filter, category filter by selecting one at a time, multiselect filter for authors and duration range filter), are chained together to generate a reduced filtered blogs. Debouncing is applied to each type of filter to improve user experience and performance.
+Any suggestions for improvement are welcomed.
+
+[Live site link](https://lnkd.in/g8xFJrsZ)
+**Visit this site from a desktop screen as the site is not properly responsive yet**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
